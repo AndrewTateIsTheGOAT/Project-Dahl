@@ -8,6 +8,13 @@ namespace Project_Dahl
 {
     internal class PrintCarInfo
     {
-        public string _userCarChoice;
+        protected string _userCarChoice;
+        protected double UserCarChoicePrice;
+
+        public string CarChoice
+        {
+            get { return _userCarChoice; }
+            set { _userCarChoice = value; }
+        }
     }
 }

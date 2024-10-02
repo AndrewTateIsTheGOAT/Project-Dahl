@@ -8,6 +8,11 @@ namespace Project_Dahl
 {
     internal class Sport : Cars
     {
-        public int _horsePower;
+        public int HorsePower;
+
+        public Sport(int inputHorsePower, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel) : base(inputCarType, inputShiftGear, inputMileage, inputFuel)
+        {
+            HorsePower = inputHorsePower;
+        }
     }
 }

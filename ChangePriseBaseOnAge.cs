@@ -6,8 +6,48 @@ using System.Threading.Tasks;
 
 namespace Project_Dahl
 {
-    internal class ChangePriseBaseOnAge
+    internal class ChangePriseBaseOnAge : PrintCarInfo
     {
-
+        private int UserAge;
+        
+        public void ChangePrice()
+        {
+            if(UserAge < 25 && _userCarChoice == "Lyx")
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1.2;
+            }
+            else if(UserAge < 25 && _userCarChoice == "Sport")
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1.25;
+            }
+            else if (UserAge < 25 && _userCarChoice == "Minivan")
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1.1;
+            }
+            else if (UserAge >= 25 && _userCarChoice == "Lyx" && UserAge > 60)
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1;
+            }
+            else if (UserAge >= 25 && _userCarChoice == "Sport" && UserAge > 60)
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1;
+            }
+            else if (UserAge >= 25 && _userCarChoice == "Minivan" && UserAge > 60)
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1;
+            }
+            else if (UserAge >= 60 && _userCarChoice == "Lyx")
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1.15;
+            }
+            else if (UserAge >= 60 && _userCarChoice == "Sport")
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1.2;
+            }
+            else if (UserAge >= 60 && _userCarChoice == "Minivan")
+            {
+                UserCarChoicePrice = UserCarChoicePrice * 1.05;
+            }
+        }
     }
 }

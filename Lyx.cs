@@ -8,6 +8,11 @@ namespace Project_Dahl
 {
     internal class Lyx : Cars
     {
-        public int _comfortLevel;
+        public int ComfortLevel;
+
+        public Lyx(int inputComfortLevel, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel) : base(inputCarType, inputShiftGear, inputMileage, inputFuel)
+        {
+            ComfortLevel = inputComfortLevel;
+        }
     }
 }
