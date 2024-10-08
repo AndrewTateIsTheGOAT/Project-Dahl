@@ -10,7 +10,7 @@ namespace Project_Dahl
     {
         public int HorsePower;
 
-        public Sport(int inputHorsePower, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel) : base(inputCarType, inputShiftGear, inputMileage, inputFuel)
+        public Sport(int inputHorsePower, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputShiftGear, inputMileage, inputFuel, inputPrice)
         {
             HorsePower = inputHorsePower;
         }

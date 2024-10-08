@@ -10,7 +10,7 @@ namespace Project_Dahl
     {
         public int TowBarCapacity;
 
-        public Minivan(int inputTowBarCapacity, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel) : base(inputCarType, inputShiftGear, inputMileage, inputFuel)
+        public Minivan(int inputTowBarCapacity, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputShiftGear, inputMileage, inputFuel, inputPrice)
         {
             TowBarCapacity = inputTowBarCapacity;
         }
