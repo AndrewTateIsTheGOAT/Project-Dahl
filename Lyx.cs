@@ -10,9 +10,14 @@ namespace Project_Dahl
     {
         public int ComfortLevel;
 
-        public Lyx(int inputComfortLevel, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel) : base(inputCarType, inputShiftGear, inputMileage, inputFuel)
+        public Lyx(int inputComfortLevel, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputShiftGear, inputMileage, inputFuel, inputPrice)
         {
             ComfortLevel = inputComfortLevel;
         }
+        //public int ComfortLevel
+        //{
+        //    get { return ComfortLevel; }
+        //    set { ComfortLevel = value; }
+        //}
     }
 }

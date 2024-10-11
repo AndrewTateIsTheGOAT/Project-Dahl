@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Project_Dahl
 {
-    internal class ChangePriseBaseOnAge : PrintCarInfo
+    internal class ChangePriseBaseOnAge
     {
-        private int UserAge;
+
         
-        public void ChangePrice()
+        public double ChangePrice(int UserAge, string _userCarChoice, double UserCarChoicePrice)
         {
             if(UserAge < 25 && _userCarChoice == "Lyx")
             {
@@ -48,6 +48,7 @@ namespace Project_Dahl
             {
                 UserCarChoicePrice = UserCarChoicePrice * 1.05;
             }
+            return UserCarChoicePrice;
         }
     }
 }

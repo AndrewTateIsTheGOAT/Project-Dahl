@@ -10,7 +10,15 @@ namespace Project_Dahl
     {
         static void Main(string[] args)
         {
-            
+            UserInterface userInterface = new UserInterface();
+            Cars good = userInterface.UserPreferences();
+            CheckForFittingCars checkForFittingCars = new CheckForFittingCars();
+            List<Cars> autism = checkForFittingCars.CarsThatFit(good.CarType, good.ShiftGear, good.Mileage, good.Fuel);
+            for (int i = 0; i < autism.Count; i++)
+            {
+                Console.WriteLine(autism[i]);
+            }
+            //checkForFIttingCars.CarsThatFit();
         }
     }
 }

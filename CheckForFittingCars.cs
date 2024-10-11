@@ -10,47 +10,85 @@ namespace Project_Dahl
     {
         public List<Cars> CarList = new List<Cars>
         {
-            new Cars("Lyx", "Manual", 5000, "Diesel", 6000),
-            new Cars("Lyx", "Automat", 5000, "Diesel", 5500),
-            new Cars("Lyx", "Manual", 5000, "Bensin", 4500),
-            new Cars("Lyx", "Automat", 5000, "Bensin", 5000),
-            new Cars("Lyx", "Manual", 10000, "Diesel", 4500),
-            new Cars("Lyx", "Automat", 10000, "Diesel", 4500),
-            new Cars("Lyx", "Manual", 10000, "Bensin", 4000),
-            new Cars("Lyx", "Automat", 10000, "Bensin", 4000),
-            new Cars("Lyx", "Manual", 15000, "Diesel", 3500),
-            new Cars("Lyx", "Automat", 15000, "Diesel", 3500),
-            new Cars("Lyx", "Manual", 15000, "Bensin", 3500),
-            new Cars("Lyx", "Automat", 15000, "Bensin", 3500),
-            new Cars("Minivan", "Automat", 5000, "Diesel", 2000),
-            new Cars("Minivan", "Manual", 5000, "Diesel", 2000),
-            new Cars("Minivan", "Automat", 5000, "Bensin", 2000),
-            new Cars("Minivan", "Manual", 5000, "Bensin", 2000),
-            new Cars("Minivan", "Automat", 10000, "Diesel", 1500),
-            new Cars("Minivan", "Manual", 10000, "Diesel", 1500),
-            new Cars("Minivan", "Automat", 10000, "Bensin", 1500),
-            new Cars("Minivan", "Manual", 10000, "Bensin", 1500),
-            new Cars("Minivan", "Automat", 15000, "Diesel", 1000),
-            new Cars("Minivan", "Manual", 15000, "Diesel", 1000),
-            new Cars("Minivan", "Automat", 15000, "Bensin", 1000),
-            new Cars("Minivan", "Manual", 15000, "Bensin", 1000),
-            new Cars("Sport", "Manual", 5000, "Diesel", 5000),
-            new Cars("Sport", "Automat", 5000, "Diesel", 5000),
-            new Cars("Sport", "Manual", 5000, "Bensin", 5500),
-            new Cars("Sport", "Automat", 5000, "Bensin", 5500),
-            new Cars("Sport", "Manual", 10000, "Diesel", 6000),
-            new Cars("Sport", "Automat", 10000, "Diesel", 6000),
-            new Cars("Sport", "Manual", 10000, "Bensin", 6500),
-            new Cars("Sport", "Automat", 10000, "Bensin", 6500),
-            new Cars("Sport", "Manual", 15000, "Diesel", 7000),
-            new Cars("Sport", "Automat", 15000, "Diesel", 7500),
-            new Cars("Sport", "Manual", 15000, "Bensin", 7500),
-            new Cars("Sport", "Automat", 15000, "Bensin", 7000),
+            new Lyx(1, "Lyx", "Manuell", 5000, "Diesel", 6000),
+            new Lyx(1, "Lyx", "Manuell", 5000, "Diesel", 5500),
+            new Lyx(1, "Lyx", "Automat", 5000, "Bensin", 4500),
+            new Lyx(1, "Lyx", "Automat", 5000, "Diesel", 5000),
+            new Lyx(1, "Lyx", "Manuell", 10000, "Diesel", 6000),
+            new Lyx(1, "Lyx", "Manuell", 10000, "Diesel", 5500),
+            new Lyx(1, "Lyx", "Automat", 10000, "Bensin", 4500),
+            new Lyx(1, "Lyx", "Automat", 10000, "Diesel", 5000),
+            new Lyx(2, "Lyx", "Manuell", 5000, "Bensin", 4500),
+            new Lyx(2, "Lyx", "Manuell", 5000, "Diesel", 5000),
+            new Lyx(2, "Lyx", "Automat", 5000, "Bensin", 5000),
+            new Lyx(2, "Lyx", "Automat", 5000, "Diesel", 5000),
+            new Lyx(2, "Lyx", "Manuell", 10000, "Bensin", 4500),
+            new Lyx(2, "Lyx", "Manuell", 10000, "Diesel", 5000),
+            new Lyx(2, "Lyx", "Automat", 10000, "Bensin", 5000),
+            new Lyx(2, "Lyx", "Automat", 10000, "Diesel", 5000),
+            new Lyx(3, "Lyx", "Manuell", 5000, "Bensin", 4500),
+            new Lyx(3, "Lyx", "Automat", 5000, "Diesel", 5000),
+            new Lyx(3, "Lyx", "Manuell", 5000, "Diesel", 5000),
+            new Lyx(3, "Lyx", "Automat", 5000, "Bensin", 5000),
+            new Lyx(3, "Lyx", "Manuell", 10000, "Bensin", 4500),
+            new Lyx(3, "Lyx", "Automat", 10000, "Diesel", 5000),
+            new Lyx(3, "Lyx", "Manuell", 10000, "Diesel", 5000),
+            new Lyx(3, "Lyx", "Automat", 10000, "Bensin", 5000),
+            new Minivan(1, "Minivan", "Automat", 5000, "Diesel", 2000),
+            new Minivan(1, "Minivan", "Manuell", 5000, "Diesel", 2000),
+            new Minivan(1, "Minivan", "Automat", 5000, "Bensin", 2000),
+            new Minivan(1, "Minivan", "Manuell", 5000, "Bensin", 2000),
+            new Minivan(1, "Minivan", "Automat", 10000, "Diesel", 2000),
+            new Minivan(1, "Minivan", "Manuell", 10000, "Diesel", 2000),
+            new Minivan(1, "Minivan", "Automat", 10000, "Bensin", 2000),
+            new Minivan(1, "Minivan", "Manuell", 10000, "Bensin", 2000),
+            new Minivan(2, "Minivan", "Automat", 5000, "Diesel", 2000),
+            new Minivan(2, "Minivan", "Manuell", 5000, "Diesel", 2000),
+            new Minivan(2, "Minivan", "Automat", 5000, "Bensin", 2000),
+            new Minivan(2, "Minivan", "Manuell", 5000, "Bensin", 2000),
+            new Minivan(2, "Minivan", "Automat", 10000, "Diesel", 2000),
+            new Minivan(2, "Minivan", "Manuell", 10000, "Diesel", 2000),
+            new Minivan(2, "Minivan", "Automat", 10000, "Bensin", 2000),
+            new Minivan(2, "Minivan", "Manuell", 10000, "Bensin", 2000),
+            new Minivan(3, "Minivan", "Automat", 5000, "Diesel", 2000),
+            new Minivan(3, "Minivan", "Manuell", 5000, "Diesel", 2000),
+            new Minivan(3, "Minivan", "Automat", 5000, "Bensin", 2000),
+            new Minivan(3, "Minivan", "Manuell", 5000, "Bensin", 2000),
+            new Minivan(3, "Minivan", "Automat", 10000, "Diesel", 2000),
+            new Minivan(3, "Minivan", "Manuell", 10000, "Diesel", 2000),
+            new Minivan(3, "Minivan", "Automat", 10000, "Bensin", 2000),
+            new Minivan(3, "Minivan", "Manuell", 10000, "Bensin", 2000),
+            new Sport(200, "Sport", "Manuell", 5000, "Diesel", 5000),
+            new Sport(200, "Sport", "Automat", 5000, "Diesel", 5000),
+            new Sport(200,"Sport", "Manuell", 5000, "Bensin", 5500),
+            new Sport(200, "Sport", "Automat", 5000, "Bensin", 5500),
+            new Sport(200, "Sport", "Manuell", 10000, "Diesel", 6000),
+            new Sport(200, "Sport", "Automat", 10000, "Diesel", 6000),
+            new Sport(200, "Sport", "Manuell", 10000, "Bensin", 6500),
+            new Sport(200, "Sport", "Automat", 10000, "Bensin", 6500),
+            new Sport(400, "Sport", "Manuell", 5000, "Diesel", 5000),
+            new Sport(400, "Sport", "Automat", 5000, "Diesel", 5000),
+            new Sport(400,"Sport", "Manuell", 5000, "Bensin", 5500),
+            new Sport(400, "Sport", "Automat", 5000, "Bensin", 5500),
+            new Sport(400, "Sport", "Manuell", 10000, "Diesel", 6000),
+            new Sport(400, "Sport", "Automat", 10000, "Diesel", 6000),
+            new Sport(400, "Sport", "Manuell", 10000, "Bensin", 6500),
+            new Sport(400, "Sport", "Automat", 10000, "Bensin", 6500),
+            new Sport(600, "Sport", "Manuell", 5000, "Diesel", 5000),
+            new Sport(600, "Sport", "Automat", 5000, "Diesel", 5000),
+            new Sport(600,"Sport", "Manuell", 5000, "Bensin", 5500),
+            new Sport(600, "Sport", "Automat", 5000, "Bensin", 5500),
+            new Sport(600, "Sport", "Manuell", 10000, "Diesel", 6000),
+            new Sport(600, "Sport", "Automat", 10000, "Diesel", 6000),
+            new Sport(600, "Sport", "Manuell", 10000, "Bensin", 6500),
+            new Sport(600, "Sport", "Automat", 10000, "Bensin", 6500),
+
+
 
         };
         public int _basePrice;
         
-        public List<Cars> CarsThatFit(string inputCarType, string inputShiftGear, int inputMileage, string inputFuel)
+        public List<Cars> CarsThatFit(int inputSpecificChoice, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice)
         {
             List<Cars> FittingCars = new List<Cars>
             {
@@ -58,12 +96,32 @@ namespace Project_Dahl
             };
             for(int i = 0; i < CarList.Count; i++)
             {
-                if (CarList[i].CarType == inputCarType && CarList[i].ShiftGear == inputShiftGear && CarList[i].Mileage == inputMileage && CarList[i].Fuel == inputFuel)
+                if(CarList[i].CarType == "Lyx")
                 {
-                    FittingCars.Add(CarList[i]);
+                    Lyx lyxCar = (Lyx)CarList[i];
+                    if (lyxCar.ComfortLevel == inputSpecificChoice && CarList[i].CarType == inputCarType && CarList[i].ShiftGear == inputShiftGear && CarList[i].Mileage == inputMileage && CarList[i].Fuel == inputFuel && CarList[i].Price == inputPrice)
+                    {
+                        FittingCars.Add(CarList[i]);
+                    }
+                }
+                if(CarList[i].CarType == "Sport")
+                {
+                    Sport sportCar = (Sport)CarList[i];
+                    if (sportCar.HorsePower == inputSpecificChoice && CarList[i].CarType == inputCarType && CarList[i].ShiftGear == inputShiftGear && CarList[i].Mileage == inputMileage && CarList[i].Fuel == inputFuel && CarList[i].Price == inputPrice)
+                    {
+                        FittingCars.Add(CarList[i]);
+                    }
+                }
+                if(CarList[i].CarType == "Minivan")
+                {
+                    Minivan minivanCar = (Minivan)CarList[i];
+                    if (minivanCar.TowBarCapacity == inputSpecificChoice && CarList[i].CarType == inputCarType && CarList[i].ShiftGear == inputShiftGear && CarList[i].Mileage == inputMileage && CarList[i].Fuel == inputFuel && CarList[i].Price == inputPrice)
+                    {
+                        FittingCars.Add(CarList[i]);
+                    }
                 }
             }
-            return CarList;            
+            return FittingCars;            
         }
     }
 }
