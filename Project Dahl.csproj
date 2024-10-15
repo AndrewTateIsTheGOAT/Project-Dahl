@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cars.cs" />
+    <Compile Include="CarUserPreferences.cs" />
     <Compile Include="ChangePriseBaseOnAge.cs" />
     <Compile Include="CheckForFittingCars.cs" />
     <Compile Include="Lyx.cs" />

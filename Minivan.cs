@@ -8,11 +8,19 @@ namespace Project_Dahl
 {
     internal class Minivan : Cars
     {
-        public int TowBarCapacity;
+        
+        private int _towbarCapacity;
 
-        public Minivan(int inputTowBarCapacity, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputShiftGear, inputMileage, inputFuel, inputPrice)
+        public Minivan(int inputTowbarCapacity, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputFuel, inputPrice, inputShiftGear, inputMileage)
         {
-            TowBarCapacity = inputTowBarCapacity;
+            _towbarCapacity = inputTowbarCapacity;
+        }
+
+        public int TowBarCapacity
+        {
+            get { return _towbarCapacity; }
+            set { _towbarCapacity = value; }
         }
     }
 }
+

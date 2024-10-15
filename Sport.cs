@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +8,18 @@ namespace Project_Dahl
 {
     internal class Sport : Cars
     {
-        public int HorsePower;
+        
+        private int _horsePower;
 
-        public Sport(int inputHorsePower, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputShiftGear, inputMileage, inputFuel, inputPrice)
+        public Sport(int inputHorsePower, string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputFuel, inputPrice, inputShiftGear, inputMileage)
         {
-            HorsePower = inputHorsePower;
+            _horsePower = inputHorsePower;
+        }
+        public int HorsePower
+        {
+            get { return _horsePower; }
+            set { _horsePower = value; }
         }
     }
 }
+

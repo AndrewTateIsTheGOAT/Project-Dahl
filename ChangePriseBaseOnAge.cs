@@ -9,7 +9,13 @@ namespace Project_Dahl
     internal class ChangePriseBaseOnAge
     {
 
-        
+        /// <summary>
+        /// Metoden ska använda användarens ålderinput och sen basera priset på det eftersom försäkringen blir dyrare om personen är en ung förare eller en gammal förare. 
+        /// </summary>
+        /// <param name="UserAge"></param>
+        /// <param name="_userCarChoice"></param>
+        /// <param name="UserCarChoicePrice"></param>
+        /// <returns></returns>
         public double ChangePrice(int UserAge, string _userCarChoice, double UserCarChoicePrice)
         {
             if(UserAge < 25 && _userCarChoice == "Lyx")
