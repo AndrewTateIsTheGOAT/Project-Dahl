@@ -13,8 +13,15 @@ namespace Project_Dahl
         protected int _mileage;
         protected string _fuel;
         protected int _price;
-        
 
+        /// <summary>
+        /// Konstruktorn returnerar en instans av klassen Cars
+        /// </summary>
+        /// <param name="inputCarType"></param>
+        /// <param name="inputShiftGear"></param>
+        /// <param name="inputMileage"></param>
+        /// <param name="inputFuel"></param>
+        /// <param name="inputPrice"></param>
         public Cars(string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice)
         {
             _carType = inputCarType;
