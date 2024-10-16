@@ -20,16 +20,31 @@ namespace Project_Dahl
             //}
 
             UserInterface userInterface = new UserInterface();
-            Cars good = userInterface.UserPreferences();
-            CheckForFittingCars fitCars = new UserInterface.UserPreferences();
+            CarUserPreferences carUserInput = userInterface.UserPreferences();
 
             CheckForFittingCars checkForFittingCars = new CheckForFittingCars();
-            List<Cars> autism = checkForFittingCars.CarsThatFit(fitCars.spec, good.CarType, good.ShiftGear, good.Mileage, good.Fuel, good.Price);
-            for (int i = 0; i < autism.Count; i++)
+            List<Cars> cars = checkForFittingCars.CarsThatFit(carUserInput.gatheredSpecificChoice, carUserInput.gatheredCarType, carUserInput.gatheredShiftGear, carUserInput.gatheredMileage, carUserInput.gatheredFuelType, carUserInput.gatheredPrice);
+            
+            for (int i = 0; i < cars.Count; i++)
             {
-                Console.WriteLine(autism[i]);
+                if (cars[i].CarType == "Lyx")
+                {
+                    Lyx lyxCar = (Lyx)cars[i];
+                    Console.WriteLine(lyxCar);
+                }
+                if (cars[i].CarType == "Lyx")
+                {
+                    Sport Sport = (Sport)cars[i];
+                    Console.WriteLine(Sport);
+                }
+                if (cars[i].CarType == "Minivan")
+                {
+                    Minivan Minivan = (Minivan)cars[i];
+                    Console.WriteLine(Minivan);
+                }
+                Console.WriteLine(cars[i].ShiftGear, cars[i].CarType, cars[i].Mileage, cars[i].Fuel, cars[i].Price);
             }
-            checkForFIttingCars.CarsThatFit();
+
         }
     }
 }

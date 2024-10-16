@@ -12,7 +12,7 @@ namespace Project_Dahl
         /// Den ska fråga användaren alla viktiga bil-specifikation-fråger och spara dem värdena  i olika objekt. Dessutom ska den kolla vilken biltyp som användaren valt och basera en fråga på användarens input. 
         /// </summary>
         /// <returns></returns>
-        public Cars UserPreferences()
+        public CarUserPreferences UserPreferences()
         {
             PrintCarInfo printCarInfo = new PrintCarInfo();
 
@@ -53,6 +53,10 @@ namespace Project_Dahl
                 Console.WriteLine("Vilken dragkrokskapacitet vill du ha?(Mellan 1 - 3)");
                 string inputTowbarCapacity = Console.ReadLine();
                 SpecificCarSpecification = int.Parse(inputTowbarCapacity);
+            }
+            else
+            {
+                SpecificCarSpecification = 1;
             }
 
             CarUserPreferences cars = new CarUserPreferences(SpecificCarSpecification, UserCarTypeInput, UserCarGearInput, UserFuelInput, UserMilageInput, UserPriceInput);

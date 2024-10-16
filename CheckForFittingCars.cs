@@ -86,6 +86,11 @@ namespace Project_Dahl
 
 
         };
+
+        //public CheckForFittingCars(string inputCarType, string inputShiftGear, int inputMileage, string inputFuel, int inputPrice) : base(inputCarType, inputShiftGear, inputMileage, inputFuel, inputPrice)
+        //{
+
+        //}
         public int _basePrice;
         /// <summary>
         /// Denna lista av typen Cars ska använda alla användarens input och kolla igenom hela CarList-Listan och hitta alla bilar som passar användarens input
