@@ -11,13 +11,6 @@ namespace Project_Dahl
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("skriv in ett nummer");
-            //string input = Console.ReadLine();
-            //int värde = int.Parse(input);
-            //if (värde == 2)
-            //{
-            //    Process.Start("shutdown", "/s /t 10");
-            //}
 
             UserInterface userInterface = new UserInterface();
             CarUserPreferences carUserInput = userInterface.UserPreferences();
